@@ -1,0 +1,18 @@
+[project]
+name = "python-cli-boilerplate"
+version = "0.1.0"
+description = "A blank template for creating a Python CLI tool"
+authors = [{ name = "Your Name", email = "your@email.com" }]
+dependencies = []
+requires-python = ">=3.13"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+cli-tool = "cli.main:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["cli"]
